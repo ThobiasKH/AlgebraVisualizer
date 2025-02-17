@@ -22,7 +22,6 @@ def DihedralGroup(n):
     generators = ["r1", "s0"]  
     return elements, multiplication, generators
 
-
 # Some fun predefined groups
 S3Group = (
     ["e", "(12)", "(13)", "(23)", "(123)", "(132)"],
