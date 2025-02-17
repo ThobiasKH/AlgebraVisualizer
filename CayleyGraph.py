@@ -1,5 +1,8 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+from pathlib import Path
+
+img_folder = Path(__file__).parent / 'img'
 
 class CayleyGraph:
     def __init__(self, elements, multiplication_table, generators):
@@ -34,5 +37,5 @@ class CayleyGraph:
 
         plt.title("Cayley Graph")
         if save_as:
-            plt.savefig("./img/" + save_as)
+            plt.savefig(str(img_folder) + "/" + save_as)
         # plt.show() / doesn't work for some reason
